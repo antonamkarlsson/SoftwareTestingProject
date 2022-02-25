@@ -25,4 +25,11 @@ public class CalculatorTest {
 		assertEquals(2, calculator.add(1, 1));
 	}
 
+	@Test
+	public void addTest() {
+		Calculator calculator = new Calculator();
+
+		assertEquals(3, calculator.add(1, 1));
+	}
+
 }
