@@ -29,6 +29,13 @@ public class TestSuite {
 
 	@Test
 	public void unitTest_featureAdd_classAdder() {
+		System.out.println("Running test unitTest_featureAdd_classAdder");
 		assertEquals(10, adder.add(5, 5));
+	}
+
+	@Test
+	public void unitTest_featureMult_classMultiplier() {
+		System.out.println("Running test unitTest_featureMult_classMultiplier");
+		assertEquals(9, multiplier.mult(3, 3));
 	}
 }
