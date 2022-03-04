@@ -43,10 +43,4 @@ public class CalculatorTest {
 	public void multTestTwo() {
 		assertEquals(12, calculator.mult(3, 4));
 	}
-
-	@Test
-	public void divisionTest() {
-		assertEquals(2, calculator.divide(4, 2));
-	}
-
 }
