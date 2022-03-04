@@ -9,7 +9,7 @@ import org.junit.Test;
 public class TestSuite {
 
 	// Naming convention for test cases is:
-	// tcNameOfFunction
+	// typeOfTest_featureMethodName(s)_classClassName(s)
 
 	Adder adder;
 
@@ -28,7 +28,7 @@ public class TestSuite {
 	}
 
 	@Test
-	public void tcAdd() {
+	public void unitTest_featureAdd_classAdder() {
 		assertEquals(10, adder.add(5, 5));
 	}
 }
