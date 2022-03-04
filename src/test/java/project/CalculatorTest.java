@@ -39,4 +39,9 @@ public class CalculatorTest {
 		assertEquals(9, calculator.mult(3, 3));
 	}
 
+	@Test
+	public void multTestTwo() {
+		assertEquals(12, calculator.mult(3, 4));
+	}
+
 }
