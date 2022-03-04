@@ -12,12 +12,14 @@ public class TestSuite {
 	// typeOfTest_featureMethodName(s)_classClassName(s)
 
 	Adder adder;
+	Multiplier multiplier;
 
 	@Before
 	public void setUp() throws Exception {
 		System.out.println("Running setUp()");
 
 		adder = new Adder();
+		multiplier = new Multiplier();
 	}
 
 	@After
@@ -25,6 +27,7 @@ public class TestSuite {
 		System.out.println("Running teardown()");
 
 		adder = null;
+		multiplier = null;
 	}
 
 	@Test
