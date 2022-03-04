@@ -8,28 +8,35 @@ import org.junit.Test;
 
 public class CalculatorTest {
 
+	Calculator calculator;
+
 	@Before
 	public void setUp() throws Exception {
 		System.out.println("Running setup!");
+
+		calculator = new Calculator();
 	}
 
 	@After
 	public void tearDown() throws Exception {
 		System.out.println("Running teardown!");
+
+		calculator = null;
 	}
 
 	@Test
-	public void test() {
-		Calculator calculator = new Calculator();
-
-		assertEquals(2, calculator.add(1, 1));
+	public void subTest() {
+		assertEquals(2, calculator.sub(4, 2));
 	}
 
 	@Test
 	public void addTest() {
-		Calculator calculator = new Calculator();
-
 		assertEquals(3, calculator.add(1, 2));
+	}
+
+	@Test
+	public void multTest() {
+		assertEquals(9, calculator.mult(3, 3));
 	}
 
 }
