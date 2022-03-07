@@ -23,6 +23,9 @@ public class TestSuite {
 
 		adder = new Adder();
 		multiplier = new Multiplier();
+		sub = new Subtract();
+		div = new Divide();
+
 	}
 
 	@After
@@ -31,6 +34,8 @@ public class TestSuite {
 
 		adder = null;
 		multiplier = null;
+		sub = null;
+		div = null;
 	}
 	@Test
 	public void unitTest_featureSub_classSub(){
@@ -41,7 +46,7 @@ public class TestSuite {
 	@Test
 	public void unitTest_featureDiv_classDiv(){
 		System.out.println("Running test unitTest_featureDIV_classDiv");
-		assertEquals(2,Div.divide(10,5));
+		assertEquals(2,div.div(10,5));
 	}
 
 
