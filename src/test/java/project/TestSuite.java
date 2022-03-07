@@ -13,6 +13,8 @@ public class TestSuite {
 	// typeOfTest_featureMethodName(s)_classClassName(s)
 
 	Adder adder;
+	Subtract sub;
+	Divide div;
 	Multiplier multiplier;
 
 	@Before
@@ -30,6 +32,18 @@ public class TestSuite {
 		adder = null;
 		multiplier = null;
 	}
+	@Test
+	public void unitTest_featureSub_classSub(){
+		System.out.println("Running test unitTest_featureSUB_classSub");
+		assertEquals(5,sub.subtract(10,5));
+	}
+
+	@Test
+	public void unitTest_featureDiv_classDiv(){
+		System.out.println("Running test unitTest_featureDIV_classDiv");
+		assertEquals(2,Div.divide(10,5));
+	}
+
 
 	@Test
 	public void unitTest_featureAdd_classAdder() {
